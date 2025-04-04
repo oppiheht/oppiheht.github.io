@@ -1,0 +1,199 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Samantha Buckle} \\ \vspace{1pt}
+    \large (805)-795-9739 $|$ \href{mailto:x@x.com}{\underline{samantha.buckle4@gmail.com}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California State University Channel Islands}{August 2021 - May 2025}
+      {Bachelors of Science in Mechatronics Engineering, Minors in Math and Computer Science}{ }
+  \resumeSubHeadingListEnd
+
+
+%-----------RELEVANT COURSEWORK-----------
+\section{Relevant Coursework}
+   \begin{itemize}[leftmargin=0.15in, label={}]
+    \large{\item{
+     \textnormal{Engineering Design, Logic Circuits, Electrical Circuit Analysis, Electronics, Sensors and Measurements, Digital Systems Design, Feedback Control Systems, Embedded Systems, Mobile Robotics} \\
+     
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS / In Progress-----------
+\section{Projects}
+    \large\resumeSubHeadingListStart
+
+     \resumeProjectHeading
+        {\large\textbf{Senior Design Project: Home Security Robot} \emph{}}{September 2024 -- present}
+          \resumeItemListStart
+            \resumeItem{Designed a mobile robot to follow a set navigation algorithm to survey space inside a room} \\
+            \resumeItem{Tested and documented various sensors used for obstacle detection, motion detection, and intruder recognition} \\
+                \resumeSubSubheadingListStart
+                    \resumeSubSubheading{(SUBITEM) Time of Flight, Passive Infrared, Sound Sensor, Gyroscope, Ultrasonic, Optical Sensor Encoders}
+                \resumeSubSubHeadingListEnd
+            \resumeItem{Manufactured robot base components using Fusion360 and a Prusa 3D printer} \\
+            \resumeItem{Presenting to industry professionals, capstone committee, other students and parents} \\
+       \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\large\textbf{FIRST Tech Challenge something} \emph{}}{August 2018 -- June 2021}
+           \resumeItemListStart
+            \resumeItem{President of team for two years} \\
+           
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+        {\large\textbf{Mobile Robotics Final Project} \emph{}}{January 2025 -- present}
+          \resumeItemListStart
+            \resumeItem{Constructed a robot for a class to build foundational knowledge of motors, motor controllers, encoders, sensors, and their interfacing together} \\
+            \resumeItem{Programmed and tuned a custom PID controller to control PWM motor speed based on sensor input} \\
+       \resumeItemListEnd
+   
+      \resumeProjectHeading
+          {\large\textbf{Robot Rodeo} \emph{}}{October 2021 -- May 2022}
+           \resumeItemListStart
+            \resumeItem{U.S. Navy sponsored project with Fathomwerks on Port Hueneme Naval Base}
+            \resumeItem{Operated a mobile robot through a US Navy designed mock-course of a naval ship to complete set of assigned tasks}
+          \resumeItemListEnd
+
+       
+
+       
+         
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \large{\item{
+     \textbf{Programming Languages}{: C/C++, Java, Python} \\
+     \textbf{Skills}{: Fusion360, MATLAB, Arduino, soldering}  }}
+ \end{itemize}
+
+ \section{Other Stuff (title in progress)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \large{\item{
+     \textbf{FIRST Tech Challenge Alumnae}{: President of my high school robotics team for two years, member for three, went to LA Regionals twice, won design and programming awards, and uhhhhhhhh} \\
+     \textbf{robot mentor????}{: but i' go there like 2x a semester maaayybbeee so I feel weird putting it until/unless I go there and help more?????} \\
+     \textbf{School Volunteer Work}{: Helped out at CSUCI STEAM Carnival and multiple robotics workshops aimed to get grade school kids interested and active in robotics (((i can totally get a rec letter from my prof if that is something that is helpful)} }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
+
+%%%% NOTES: %%%%
+
+%% I feel like these are all just technical skills and nothing to do with some "people skills" like public speaking, excited to learn, hard working etc. Is any of that important anymore? That's something my parents had suggested but they also told me I should put that I know how to type sooooooo, idk if I want to take all of their advice that might have been good twenty years ago before computers were everywhere ¯\_(ツ)_/¯ %%
+
+%% HOW MANY THINGS FROM HIGH SCHOOL ARE STILL RELEVANT??? SKYSTONE WAS FIVE YEARS AGO WHEN I WAS SEVENTEEN, I'M TWENTY TWO NOW ....omg %%
+
+%% WHERE / HOW AM I SUPPOSED TO PUT PICTURES????? a.) I keep forgetting to take pictures of the things I am doing (a me problem) b.) is there room on a single page resume for that?????? c.) idk how to do that in overleaf latex lmao %%

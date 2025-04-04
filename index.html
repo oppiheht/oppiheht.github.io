@@ -1,1 +1,223 @@
-Hi i'm Sam now
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Buckle's Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #2d3748;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        .section:hover {
+            transform: translateX(5px);
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #4299e1;
+            display: inline-block;
+        }
+        .contact-info {
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        .contact-info a {
+            color: #4299e1;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .contact-info a:hover {
+            color: #2b6cb0;
+        }
+        .project-placeholder {
+            background: #f7fafc;
+            border: 2px dashed #cbd5e0;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        .project-placeholder:hover {
+            border-color: #4299e1;
+            background: #ebf8ff;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .skill-category {
+            background: #f7fafc;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        @media (max-width: 640px) {
+            .container {
+                padding: 1rem;
+                margin: 1rem;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="container">
+        <header class="text-center mb-8">
+            <h1>Samantha Buckle</h1>
+            <div class="contact-info">
+                <span>(805)-795-9739</span> | 
+                <a href="mailto:samantha.buckle4@gmail.com">samantha.buckle4@gmail.com</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="mt-4">
+                <p class="font-semibold">California State University Channel Islands</p>
+                <p class="text-gray-700">Bachelors of Science in Mechatronics Engineering</p>
+                <p class="text-gray-700">Minors in Math and Computer Science</p>
+                <p class="text-gray-600">August 2021 - May 2025</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Relevant Coursework</h2>
+            <p class="mt-4 leading-relaxed">
+                Engineering Design, Logic Circuits, Electrical Circuit Analysis, Electronics, Sensors and Measurements, 
+                Digital Systems Design, Feedback Control Systems, Embedded Systems, Mobile Robotics
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="project-placeholder">
+                <h3 class="font-semibold text-lg">Senior Design Project: Home Security Robot</h3>
+                <ul class="list-disc ml-6 mt-2 text-gray-700 space-y-2">
+                    <li>Designed a mobile robot to follow a set navigation algorithm to survey space inside a room</li>
+                    <li>Tested and documented various sensors used for obstacle detection, motion detection, and intruder recognition</li>
+                    <li class="ml-4 text-gray-600">- Time of Flight, Passive Infrared, Sound Sensor, Gyroscope, Ultrasonic, Optical Sensor Encoders</li>
+                    <li>Manufactured robot base components using Fusion360 and a Prusa 3D printer</li>
+                    <li>Presenting to industry professionals, capstone committee, other students and parents</li>
+                </ul>
+                <div class="mt-4">
+                    <img src="https://placehold.co/400x200/EEE/31343C?text=Senior+Design+Project" alt="Senior Design Project" class="w-full max-w-md mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="text-gray-500 text-sm mt-2 italic text-center">[Placeholder: Add actual project images/videos here]</p>
+                </div>
+            </div>
+            <div class="project-placeholder">
+                <h3 class="font-semibold text-lg">FIRST Tech Challenge</h3>
+                <ul class="list-disc ml-6 mt-2 text-gray-700 space-y-2">
+                    <li>President of team for two years</li>
+                </ul>
+                <div class="mt-4 flex flex-col md:flex-row gap-4 items-center">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://placehold.co/400x200/EEE/31343C?text=FIRST+Tech+Challenge" alt="FIRST Tech Challenge" class="w-full max-w-md mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                        <p class="text-gray-500 text-sm mt-2 italic text-center">[Placeholder: Add competition photos/videos here]</p>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <iframe 
+                            width="400"
+                            height="200"
+                            class="w-full max-w-md mx-auto rounded-lg shadow-md"
+                            src="https://www.youtube.com/embed/PLACEHOLDER_VIDEO_ID"
+                            title="FIRST Tech Challenge Video"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <p class="text-gray-500 text-sm mt-2 italic text-center">[Replace PLACEHOLDER_VIDEO_ID with your YouTube video ID]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-placeholder">
+                <h3 class="font-semibold text-lg">Mobile Robotics Final Project</h3>
+                <ul class="list-disc ml-6 mt-2 text-gray-700 space-y-2">
+                    <li>Constructed a robot for a class to build foundational knowledge of motors, motor controllers, encoders, sensors, and their interfacing together</li>
+                    <li>Programmed and tuned a custom PID controller to control PWM motor speed based on sensor input</li>
+                </ul>
+                <div class="mt-4">
+                    <img src="https://placehold.co/400x200/EEE/31343C?text=Mobile+Robotics+Project" alt="Mobile Robotics Project" class="w-full max-w-md mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="text-gray-500 text-sm mt-2 italic text-center">[Placeholder: Add project implementation photos/videos here]</p>
+                </div>
+            </div>
+            <div class="project-placeholder">
+                <h3 class="font-semibold text-lg">Robot Rodeo</h3>
+                <ul class="list-disc ml-6 mt-2 text-gray-700 space-y-2">
+                    <li>U.S. Navy sponsored project with Fathomwerks on Port Hueneme Naval Base</li>
+                    <li>Operated a mobile robot through a US Navy designed mock-course of a naval ship to complete set of assigned tasks</li>
+                </ul>
+                <div class="mt-4">
+                    <img src="https://placehold.co/400x200/EEE/31343C?text=Robot+Rodeo" alt="Robot Rodeo" class="w-full max-w-md mx-auto rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <p class="text-gray-500 text-sm mt-2 italic text-center">[Placeholder: Add naval base course photos/videos here]</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="font-semibold mb-2">Programming Languages</h3>
+                    <p>C/C++, Java, Python</p>
+                </div>
+                <div class="skill-category">
+                    <h3 class="font-semibold mb-2">Technical Tools</h3>
+                    <p>Fusion360, MATLAB, Arduino, Soldering</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Other Activities</h2>
+            <div class="mt-4">
+                <p class="mb-4">
+                    <strong class="text-gray-800">FIRST Tech Challenge Alumnae:</strong>
+                    <span class="text-gray-700">President of my high school robotics team for two years, member for three, 
+                    went to LA Regionals twice, won design and programming awards</span>
+                </p>
+                <p>
+                    <strong class="text-gray-800">School Volunteer Work:</strong>
+                    <span class="text-gray-700">Helped out at CSUCI STEAM Carnival and multiple robotics workshops aimed to 
+                    get grade school kids interested and active in robotics</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
